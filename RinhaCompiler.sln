@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2830E7C-13D1-4B04-A361-68B48CBB47F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RinhaCompiler.Interpreter", "src\RinhaCompiler.Interpreter\RinhaCompiler.Interpreter.csproj", "{A510EB58-C802-4200-B7BC-155E9DCFB783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6E2C143F-5769-4E5C-B51B-A372C5C872BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RinhaCompiler.Interpreter.Tests", "tests\RinhaCompiler.Interpreter.Tests\RinhaCompiler.Interpreter.Tests.csproj", "{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{5D6210E3-B157-41B7-8B3E-50BFEA11E286}"
+	ProjectSection(SolutionItems) = preProject
+		files\fib.json = files\fib.json
+		files\fib.rinha = files\fib.rinha
+		files\hello.json = files\hello.json
+		files\function.rinha = files\function.rinha
+		files\function.json = files\function.json
+		files\add.rinha = files\add.rinha
+		files\add.json = files\add.json
+		files\hello.rinha = files\hello.rinha
+		files\add-string.json = files\add-string.json
+		files\add-string.rinha = files\add-string.rinha
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A510EB58-C802-4200-B7BC-155E9DCFB783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A510EB58-C802-4200-B7BC-155E9DCFB783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A510EB58-C802-4200-B7BC-155E9DCFB783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A510EB58-C802-4200-B7BC-155E9DCFB783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A510EB58-C802-4200-B7BC-155E9DCFB783} = {E2830E7C-13D1-4B04-A361-68B48CBB47F6}
+		{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0} = {6E2C143F-5769-4E5C-B51B-A372C5C872BB}
+	EndGlobalSection
+EndGlobal

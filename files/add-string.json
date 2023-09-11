@@ -1,0 +1,79 @@
+﻿{
+  "name": "files/add-string.rinha",
+  "expression": {
+    "kind": "Print",
+    "value": {
+      "kind": "Binary",
+      "lhs": {
+        "kind": "Str",
+        "value": "1 + 2 = ",
+        "location": {
+          "start": 6,
+          "end": 16,
+          "filename": "files/add-string.rinha"
+        }
+      },
+      "op": "Add",
+      "rhs": {
+        "kind": "Binary",
+        "lhs": {
+          "kind": "Str",
+          "value": "1 + 2 ",
+          "location": {
+            "start": 19,
+            "end": 27,
+            "filename": "files/add-string.rinha"
+          }
+        },
+        "op": "Add",
+        "rhs": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Bool",
+            "value": true,
+            "location": {
+              "start": 31,
+              "end": 35,
+              "filename": "files/add-string.rinha"
+            }
+          },
+          "op": "Eq",
+          "rhs": {
+            "kind": "Bool",
+            "value": true,
+            "location": {
+              "start": 39,
+              "end": 43,
+              "filename": "files/add-string.rinha"
+            }
+          },
+          "location": {
+            "start": 31,
+            "end": 43,
+            "filename": "files/add-string.rinha"
+          }
+        },
+        "location": {
+          "start": 19,
+          "end": 44,
+          "filename": "files/add-string.rinha"
+        }
+      },
+      "location": {
+        "start": 6,
+        "end": 44,
+        "filename": "files/add-string.rinha"
+      }
+    },
+    "location": {
+      "start": 0,
+      "end": 45,
+      "filename": "files/add-string.rinha"
+    }
+  },
+  "location": {
+    "start": 0,
+    "end": 45,
+    "filename": "files/add-string.rinha"
+  }
+}
