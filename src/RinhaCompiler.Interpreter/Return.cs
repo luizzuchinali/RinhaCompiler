@@ -1,6 +1,6 @@
 ﻿namespace RinhaCompiler.Interpreter;
 
-public readonly struct Return
+public readonly ref struct Return
 {
     public readonly ReturnType Type { get; }
     private readonly object? _value;

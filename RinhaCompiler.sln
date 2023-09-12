@@ -11,20 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6E2C143F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RinhaCompiler.Interpreter.Tests", "tests\RinhaCompiler.Interpreter.Tests\RinhaCompiler.Interpreter.Tests.csproj", "{4EFF5C37-84E2-4B0C-9925-45DAE9DB1DD0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{5D6210E3-B157-41B7-8B3E-50BFEA11E286}"
-	ProjectSection(SolutionItems) = preProject
-		files\fib.json = files\fib.json
-		files\fib.rinha = files\fib.rinha
-		files\hello.json = files\hello.json
-		files\function.rinha = files\function.rinha
-		files\function.json = files\function.json
-		files\add.rinha = files\add.rinha
-		files\add.json = files\add.json
-		files\hello.rinha = files\hello.rinha
-		files\add-string.json = files\add-string.json
-		files\add-string.rinha = files\add-string.rinha
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,18 +1,17 @@
-﻿using System.Text.Json;
-using RinhaCompiler.Interpreter;
-using static System.Console;
-using IOFile = System.IO.File;
+﻿using File = System.IO.File;
 
 var path = args[0];
-
-if (!IOFile.Exists(path))
+if (!File.Exists(path))
 {
     WriteLine("file not exists");
-    return 1;
+    return;
 }
 
-var program = JsonSerializer.Deserialize(IOFile.ReadAllText(args[0]), SourceGenerationContext.Default.File);
+var program = JsonSerializer.Deserialize(File.ReadAllText(args[0]), SourceGenerationContext.Default.File);
+if (program is null)
+{
+    WriteLine("Failed to parse ast");
+    return;
+}
 
-Evaluator.Eval(program!.Expression);
-
-return 0;
+Evaluator.Eval(program.Expression);

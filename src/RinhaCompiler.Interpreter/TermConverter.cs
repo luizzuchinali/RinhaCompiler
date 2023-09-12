@@ -15,8 +15,9 @@ public class TermConverter : JsonConverter<Term>
         var term = new Term
         {
             Kind = kindProperty.Deserialize(SourceGenerationContext.Default.Kind),
-            Location = doc.RootElement.GetProperty("location").Deserialize(SourceGenerationContext.Default.Location)!
+            // Location = doc.RootElement.GetProperty("location").Deserialize(SourceGenerationContext.Default.Location)!
         };
+
         switch (term.Kind)
         {
             case Kind.Print:
@@ -27,6 +28,9 @@ public class TermConverter : JsonConverter<Term>
                 break;
             case Kind.Int:
                 term.Int = doc.RootElement.GetProperty("value").GetInt32();
+                break;
+            case Kind.Bool:
+                term.Bool = doc.RootElement.GetProperty("value").GetBoolean();
                 break;
             case Kind.Binary:
                 term.BinaryOp = doc.RootElement.Deserialize(SourceGenerationContext.Default.BinaryOp);

@@ -10,7 +10,7 @@ namespace RinhaCompiler.Interpreter;
 )]
 [JsonSerializable(typeof(Kind))]
 [JsonSerializable(typeof(File))]
-[JsonSerializable(typeof(Location))]
+// [JsonSerializable(typeof(Location))]
 [JsonSerializable(typeof(Term))]
 [JsonSerializable(typeof(Print))]
 [JsonSerializable(typeof(BinaryOp))]
